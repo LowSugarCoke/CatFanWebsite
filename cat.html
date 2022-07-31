@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .banner {
+            margin: auto;
+            height: 100vh;
+            width: 100wh;
+            /*            border: 2px solid yellow;*/
+        }
+
+        .pic-banner {
+            /*            border: 2px solid red;*/
+        }
+
+        .container-banner {
+            /*            border: 2px solid green;*/
+
+        }
+
+
+        .img-banner {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+        }
+
+        .card-img-top {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .carousel-item-myself {
+            width: 100%;
+            height: 50vh;
+        }
+
+        .img-siberian {
+            object-fit: cover;
+            object-position: 0% 10%;
+        }
+
+        .img-siamese {
+            object-fit: cover;
+
+        }
+
+        .img-russian {
+            object-fit: cover;
+            object-position: 0% 30%;
+        }
+
+        .row-banner {
+            height: 100vh;
+            /*            border: 2px solid blue;*/
+        }
+
+
+        .col-banner {
+            margin-top: -400px;
+            height: 10%;
+        }
+
+        .h1-banner {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #DB5273;
+            height: 100%;
+            width: 50%;
+            margin-left: auto;
+            text-align: center;
+            font-size: 80px;
+            font-weight: 900;
+            transform: rotate(-15deg);
+
+        }
+
+        .txt-carousel-myself {
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 50%;
+            margin: auto;
+
+        }
+
+        .main-col-img {
+            height: 100%;
+        }
+
+        .main-img {
+            object-fit: contain;
+        }
+
+        .main-txt-col {
+            /*            margin: 10px;*/
+            background-color: antiquewhite;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+
+        .card-myself2 {
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">!Cats</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#HomeToggle">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="#CardsToggle">Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="#CarouselToggle">Carousel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="#BreedsToggle"> Breeds</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="test m-"></div>
+
+
+    <div class="banner mb-5" id="HomeToggle">
+        <div class="container-fluid w-100 mx-auto  p-0 container-banner">
+            <div class="row row-banner">
+                <div class="col-12 pic-banner mx-auto w-100 h-100">
+                    <img class="mx-auto w-100 h-100 img-banner" src="banner.webp" alt="">
+                </div>
+                <div class="offset-0 col-1 offset-md-1 col-md-6  offset-lg-3 col-lg-9 text-end col-banner">
+                    <h1 class=" h1-banner">I'm so pissed!!!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container  py-5" id="CardsToggle">
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col card-col">
+                <div class="card w-100 h-100 card-myself">
+                    <div class="card-pic mx-auto mt-4 card-myself2">
+                        <img src="gray_cat.webp" alt="" class="h-75 w-75 mx-auto mt-4 d-block card-img-top">
+                    </div>
+                    <div class="card-body text-center cards-txt">
+                        <h5 class="card-title">Russian Blue</h5>
+                        <p class="card-text">This breed's definitive origin isn't clear, though it's widely accepted that it's native to Russia. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card w-100 h-100 card-myself">
+                    <div class="card-pic mt-4  mx-auto card-myself2">
+                        <img src=" glasses_cat.jpg" alt="" class="h-75 w-75 mx-auto mt-4 d-block card-img-top">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Orange Cat</h5>
+                        <p class="card-text">Orange cats don’t qualify as their own distinct breed. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  w-100 h-100 card-myself">
+                    <div class="card-pic mt-4  mx-auto card-myself2">
+                        <img src="black_cat.jpg" alt="" class="h-75 w-75 mx-auto mt-4 d-block card-img-top">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Black Cat</h5>
+                        <p class="card-text">Black cats are well known for their association with Halloween, witchcraft, and luck.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="CarouselToggle" class="carousel carousel-dark slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#CarouselToggle" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#CarouselToggle" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#CarouselToggle" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item  carousel-item-myself" data-bs-interval="10000">
+                <img src="siberian.jpg" alt="" class="d-block w-100 h-100 img-siberian">
+                <div class="carousel-caption d-none d-md-block txt-carousel-myself">
+                    <h5>Meowing</h5>
+                    <p>Meowing~Meowing~Meowing~</p>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-myself" data-bs-interval="2000">
+                <img src="siamese.webp" alt="" class="d-block w-100 h-100 img-siamese">
+                <div class="carousel-caption d-none d-md-block txt-carousel-myself">
+                    <h5>I see you</h5>
+                    <p>Are you looking at me?</p>
+                </div>
+            </div>
+            <div class="carousel-item active carousel-item-myself">
+                <img src="russian-blue-cats.jpg" alt="" class="d-block w-100 h-100 img-russian">
+                <div class="carousel-caption d-none d-md-block txt-carousel-myself">
+                    <h5>ZZZ~</h5>
+                    <p>I want to sleep</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#CarouselToggle" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#CarouselToggle" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="main mt-5" id="BreedsToggle">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class=" col-md-6 main-col-img">
+                    <img src="abyssinian-cat.webp" alt="" class="d-block w-100 h-100 main-img">
+                </div>
+                <div class=" col-md-6 main-txt-col">
+                    <h3>Abyssinian</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;The Abyssinian is often a colorful cat with a distinctly ticked coat, medium in size and regal in appearance; lithe, hard and muscular, showing eager activity and lively interest in their surroundings. They are often well balanced temperamentally and physically.</p>
+                </div>
+                <div class="order-md-2 col-md-6 main-col-img">
+                    <img src="American%20Bobtail.jpg" alt="" class="w-100 h-100 main-img">
+                </div>
+                <div class="order-md-1 col-md-6  main-txt-col">
+                    <h3 class="">American Bobtail</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;The American Bobtail is generally medium to large cat, with a naturally occurring bobbed tail. The American Bobtail is athletic and usually well-muscled with a sometimes powerful look. They possess a natural hunting gaze that combined with their body type, give American Bobtail a distinctive wild appearance.</p>
+                </div>
+
+
+                <div class="order-md-3 col-md-6 main-col-img">
+                    <img src="Birman-Cat-Breed.webp" alt="" class=" w-75 h-75 main-img">
+                </div>
+                <div class="order-md-4 col-md-6 main-txt-col">
+                    <h3>Birman</h3>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;A cat of mystery and legend, the Birman is a colorpointed cat with long silky hair and four pure white feet. They are often strongly built, elongated and stocky, neither svelte nor stocky. Their distinctive head has strong jaws, firm chin, and medium length nose.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a class="nav-link active text-muted" aria-current="page" href="#HomeToggle">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  active text-muted" href="#CardsToggle">Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  active text-muted" href="#CarouselToggle">Carousel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  active text-muted" href="#BreedsToggle"> Breeds</a>
+                </li>
+
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+        </footer>
+    </div>
+
+    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
+</html>
